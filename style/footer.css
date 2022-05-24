@@ -1,0 +1,38 @@
+/**============== Footer ============**/
+.footer {
+    display: flex;
+}
+
+.footer_links{
+    display:flex;
+}
+
+.footer li{
+    list-style-type: none;
+}
+
+.footer_link{
+    padding: 0 10px; /* space right and left */
+}
+
+.footer_link > a{
+    text-decoration: none;
+    color: #87b17b;
+}
+
+.footer_link > a:hover{
+    color: #6f6f6f;
+}
+
+/**============== Anim ============**/
+.footer_link > a::after {
+    display:block;
+    content:"";
+    width:0;
+    height:1px;
+    background:#87b17b;
+    transition:width .4s;
+}
+.footer_link:hover > a::after {
+    width:100%;
+}

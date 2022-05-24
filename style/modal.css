@@ -1,0 +1,53 @@
+/* #connexionSection {
+    width: auto;
+    height: auto;
+    padding:10px 15px 25px 15px ;
+    margin-top: 90px;
+    background-color: white;
+}
+#registerSection {
+    width: auto;
+    height: auto;
+    padding:10px 15px 25px 15px ;
+    background-color: white;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.cross {
+    position: absolute;
+    top: -5px;
+    left: 220px;
+    stroke-width: 5px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#registerForm, #connexionForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 25px 25px 25px ;
+}
+#registerForm {
+    justify-content: space-evenly;
+}
+
+input{
+    padding: 5px;
+    border: rgb(170, 170, 170) solid 1px;
+    outline:none;
+}
+label {
+    margin-top: 5px;
+} */
