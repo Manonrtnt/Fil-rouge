@@ -5,7 +5,7 @@ document.getElementById("connexionForm").addEventListener("submit", async functi
 
     //*Form data in the variable with a new FormData() object
     let data = new FormData(this);
-    let url = "./controlers/login_user.php";
+    let url = "../controlers/login_user.php";
 
     let response = await fetch(
         url, {

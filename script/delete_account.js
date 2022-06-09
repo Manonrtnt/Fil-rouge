@@ -5,7 +5,7 @@ document.getElementById("deleteForm").addEventListener("submit", async function(
 
     let data = new FormData(this);
     console.log(this);
-    let url = "http://localhost/Fil_rouge1/controlers/delete_user.php";
+    let url = "../controlers/delete_user.php";
 
     let response = await fetch (
         url, {

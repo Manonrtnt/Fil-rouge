@@ -12,7 +12,7 @@
     $success = 0;
     $msg = "An error occurred in the php";
     $data = [];
-    $redirection = "./views/home.php";
+    $redirection = "../views/home.php";
 
     //! CHECK INPUT
     if(!empty($_POST['login_user']) && !empty($_POST['password_user'])) {

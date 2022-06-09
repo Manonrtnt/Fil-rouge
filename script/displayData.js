@@ -9,7 +9,7 @@ async function requestApi(url) {
 
 //! UPDATE CHART WITH DATA (from json)
 //* method THEN() appellera le gestionnaire en lui passant un objet dataPoints qui contient la réponse du serveur.
-requestApi('./controlers/displayData.php').then(dataPoints => {
+requestApi('../controlers/displayData.php').then(dataPoints => {
     //*La méthode map() crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau appelant.
     const dataTemp = dataPoints.temperatureSensor.map(function (index) {
         return index.data;

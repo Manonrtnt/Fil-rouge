@@ -5,7 +5,7 @@ document.getElementById("changeLogin").addEventListener("submit", async function
 
     let data = new FormData(this);
     // console.log(this);
-    let url = "http://localhost/Fil_rouge1/controlers/change_login.php";
+    let url = "../controlers/change_login.php";
 
     let response = await fetch (
         url, {

@@ -5,7 +5,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
 
     //*Form data in the variable with a new FormData() object
     let data = new FormData(this);
-    let url = "http://localhost/Fil_rouge1/controlers/register_user.php";
+    let url = "../controlers/register_user.php";
 
     let response = await fetch(
         url, {

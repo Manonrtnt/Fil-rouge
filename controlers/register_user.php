@@ -11,7 +11,7 @@
     //! JSON return 
     $success = 0;
     $msg = "An error occurred in the php";
-    $redirection = "./views/index.php";
+    $redirection = "../views/index.php";
 
     //! CHECK INPUT
     if(!empty($_POST['name_user'])
