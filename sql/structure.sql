@@ -1,9 +1,11 @@
 -- restart database --
 DROP DATABASE IF EXISTS fil_rouge;
+-- create database --
 CREATE DATABASE fil_rouge CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 use fil_rouge;
 
+-- create table --
 create table right_user (
 	id_right int auto_increment primary key not null, 
     name_right varchar(15)
@@ -17,6 +19,7 @@ create table users (
     email_user varchar(50),
     password_user varchar(100),
     
+    -- create foreign key --
     id_right int not null,
     constraint fk_right_user foreign key(id_right) references right_user(id_right)
 );

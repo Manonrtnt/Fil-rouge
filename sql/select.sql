@@ -1,6 +1,6 @@
 use fil_rouge;
 
--- UTILISATEUR --
+-- USERS --
 -- Afficher utilisateur (nom, prenom, email, mot de passe) --
 SELECT 
 	name_user as "Nom", 
@@ -9,10 +9,32 @@ SELECT
     email_user as "Email", 
     password_user as "Mot de passe", 
     name_right as "Droit"
-from users
-	join right_user on right_user.id_right = users.id_right;
+FROM users
+JOIN right_user
+	ON right_user.id_right = users.id_right;
 
--- DONNEES --
+-- DATA --
+-- Select where name_sensor --
+SELECT 
+	date_record as Date,
+    time_record as Time,
+	data_record as Data, 
+    name_sensor as NomCapteur, 
+    function_sensor as Fonction 
+FROM record_data
+JOIN sensor
+    ON sensor.id_sensor = record_data.id_sensor
+WHERE function_sensor = 'Temperature sensor';
+
+
+
+
+SELECT * FROM record_data;
+Select * from users;
+UPDATE users SET  login_user = "root" WHERE login_user = "manon";
+
+
+
 -- Afficher les données en fonction des capteurs utilisés -- 
 SELECT 
 	fonction_capteur as "Capteurs", 
@@ -32,14 +54,3 @@ from releve_donnee
 -- Afficher le seuil max et min pour humidité --
 -- Afficher le seuil max et min pour température --
 -- Afficher le seuil max et min pour exposition lumineuse --
-
-SELECT * FROM record_data;
-SELECT date_record as Date, data_record as Data, name_sensor as NomCapteur, function_sensor as Fonction 
-	FROM record_data
-    JOIN sensor
-    ON sensor.id_sensor = record_data.id_sensor
-    WHERE name_sensor = 'DHT11';
-
-Select * from users;
-
-UPDATE users SET  login_user = "root" WHERE login_user = "manon";
